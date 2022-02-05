@@ -1,13 +1,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
-    colors: {
-      primary: "#5000ca",
-    },
     fontFamily: {
       poppins: "poppins, system-ui",
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#5000ca",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
